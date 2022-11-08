@@ -68,6 +68,9 @@ We save a csv file from shopping baskets(they contain products that were purchas
 **2. fpgrowth.py**
 This script reads the csv file that is produced in the previous step. The reason of seperating codes is to increase efficiency and deal with memory limitations on the personal PC.
 The itemsets are fed into the FPgrowth algorithm and the result is a csv containing the products that could be bought together with a specific confidence (association rules).
+hyperparameters:
+1. minsupport: 0.0001 (Because of memory shortage I set it to 0.0001. However, I think 0.00001 is a better choice as the bigger minsupport can throw away more data.)
+2. minconfidence: 0.001
 
 **3. AssociationRules**
 Last step is to check for association rules that we extracted in the previous step. In this part of code we map the article ids to names of products.
