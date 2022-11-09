@@ -22,6 +22,7 @@ In order to analyze our market basket we can use some algorithms like Apriori or
 	Apriori is one of the algorithms that is used for pattern mining. Apriori algorithm depends on the frequencies of itemsets. It generates different tables including various items' combinations. To find the frequencies, the algorithm scans the database multiple times. There are two main disadvantages for Apriori:
 	1. The size of candidate itemset could get large
 	2. High cost because of scanning database over and over again
+	
 You can read more about Apriori [here](https://www.softwaretestinghelp.com/apriori-algorithm/)
 
 * FPgrowth algorithm (Frequent Pattern Growth algorithm):
